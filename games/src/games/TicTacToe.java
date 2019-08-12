@@ -1,6 +1,9 @@
 package games;
 
 import java.awt.EventQueue;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Toolkit;
 
 import javax.swing.JFrame;
 import javax.swing.JButton;
@@ -9,14 +12,17 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 import java.awt.event.ActionListener;
+import java.awt.image.ImageObserver;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
 
-public class TicTacToe {
+public class TicTacToe implements ImageObserver {
 static int turn=1;
 static 	String check="";
 	private JFrame frame;
 	private JTextField textField;
+Graphics g;
+static Image im=Toolkit.getDefaultToolkit().getImage("unnamed.png");
 
 	/**
 	 * Launch the application.
@@ -69,7 +75,7 @@ static 	String check="";
 		JLabel label_1 = new JLabel("3");
 		label_1.setBounds(12, 153, 20, 35);
 		frame.getContentPane().add(label_1);
-		
+		//g.drawImage(im, 249, 10,this);
 		JButton button_1A = new JButton("");
 		button_1A.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -181,14 +187,6 @@ static 	String check="";
 		btnOk.setBounds(299, 215, 97, 25);
 		frame.getContentPane().add(btnOk);
 		
-		JLabel lblEnterrcComa = new JLabel("Enter Row,Column ");
-		lblEnterrcComa.setBounds(280, 101, 133, 26);
-		frame.getContentPane().add(lblEnterrcComa);
-		
-		JLabel lblSeperated = new JLabel("coma seperated ");
-		lblSeperated.setBounds(280, 120, 133, 26);
-		frame.getContentPane().add(lblSeperated);
-		
 		JButton btnReset = new JButton("reset");
 		btnReset.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -245,17 +243,19 @@ static 	String check="";
 		btnNewButton.setBounds(159, 215, 97, 25);
 		frame.getContentPane().add(btnNewButton);
 		
-		JLabel lblExa = new JLabel("ex: 1,A");
-		lblExa.setBounds(280, 140, 133, 26);
-		frame.getContentPane().add(lblExa);
-		
 		JButton btnInstructions = new JButton("Instructions");
 		btnInstructions.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				instructions.main(null);
 			}
 		});
-		btnInstructions.setBounds(299, 34, 121, 25);
+		btnInstructions.setBounds(280, 138, 121, 25);
 		frame.getContentPane().add(btnInstructions);
+	}
+
+	@Override
+	public boolean imageUpdate(Image arg0, int arg1, int arg2, int arg3, int arg4, int arg5) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }
