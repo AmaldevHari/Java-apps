@@ -94,7 +94,7 @@ public class LoginWindow {
 			public void actionPerformed(ActionEvent arg0) {
 				try{
 					//Class.forName("com.mysql.jdbc.Driver");
-					Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/student_data ","root","9895971173");
+					Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/student_data ","root","");
 					Statement stat=con.createStatement();
 				//	String sql="Select * from login where username='"+textField.getText()+"'and password='"+passwordField.getText()+"'";
 					String sql="SELECT username,university,firstName,lastName from login where password='"+passwordField.getText()+"'";
