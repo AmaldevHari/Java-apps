@@ -96,7 +96,7 @@ public class Welcome  {
 		/*		try {
 			Student s=new Student();
 			//Class.forName("com.sql.jdbc.Driver");
-			Connection conne=DriverManager.getConnection("jdbc:mysql://localhost:3306/student_data","root","9895971173");
+			Connection conne=DriverManager.getConnection("jdbc:mysql://localhost:3306/student_data","root","");
 			String sql="select firstName,lastName,university from student_data where username='"+s.getUsername()+"'and password='"+s.getPassword()+"'" ;
 
 			Statement pst=conne.createStatement();
