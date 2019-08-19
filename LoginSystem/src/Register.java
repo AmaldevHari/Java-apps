@@ -133,7 +133,7 @@ public class Register  {
 		btnRegister.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {Class.forName("com.mysql.jdbc.Driver");
-				Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/student_data ","root","9895971173");
+				Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/student_data ","root","");
 				PreparedStatement st=conn.prepareStatement("insert into login(firstName,lastName,university,yearLevel,username,password)values(?,?,?,?,?,?)");
 				
 				st.setString(1, textField.getText());
