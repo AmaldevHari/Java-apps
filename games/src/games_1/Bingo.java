@@ -8,10 +8,12 @@ import java.util.ArrayList;
 
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 import javax.swing.JSeparator;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JTextField;
 import javax.swing.JTable;
@@ -19,12 +21,15 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
+import java.awt.Container;
 import java.awt.Font;
+import java.awt.Graphics;
 public class Bingo {
 	static boolean A_win=false;
 	static boolean B_win=false;
 	static int A=0;
 	static int B=0;
+	static String rnS="";
 	private JFrame frame;
 	private JTextField textField;
 	static int rolls=71;
@@ -58,7 +63,11 @@ public class Bingo {
 	private JTextField txtPlayerA;
 	private JTextField txtPlayerB;
 	private JTextField txtScore;
+	private JPanel panel=new JPanel();
 	private JTextField textField_28;
+//	private Graphics g=panel.getGraphics();
+	private ImageIcon im=new ImageIcon("/games/Untitled2.png");
+	
 
 	/**
 	 * Launch the application.
@@ -91,6 +100,7 @@ public class Bingo {
 		frame.setBounds(100, 100, 573, 532);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
+		frame.add(panel);
 
 		JLabel label_0 = new JLabel("");
 		label_0.setBounds(22, 13, 37, 33);
@@ -161,6 +171,7 @@ public class Bingo {
 		JLabel label_6 = new JLabel("");
 		label_6.setBounds(63, 92, 37, 33);
 		frame.getContentPane().add(label_6);
+		
 
 		JLabel label_7 = new JLabel("");
 		label_7.setBounds(66, 135, 37, 33);
@@ -234,6 +245,7 @@ public class Bingo {
 		btnReset.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				rolls=71;
+				rnS="";
 				textField.setText(""+rolls);
 				textField_28.setText("");
 				String[] bingo=new String[50];
@@ -300,6 +312,12 @@ public class Bingo {
 				rolls--;{
 					textField.setText(""+rolls);
 					int rn=(int) (Math.random() *100);
+					while(rnS.contains(""+rn)) {
+						rn=(int) (Math.random() *100);
+					}
+					rnS+="|||"+rn+"|||";
+					
+					
 					textField_28.setText(""+rn);
 					if((label.getText()).equals(""+rn)) {
 						label.setForeground(Color.RED);
@@ -1338,7 +1356,7 @@ public class Bingo {
 
 		textField_26 = new JTextField();
 		textField_26.setEditable(false);
-		textField_26.setBounds(286, 265, 116, 203);
+		textField_26.setBounds(286, 265, 116, 61);
 		frame.getContentPane().add(textField_26);
 		textField_26.setColumns(10);
 
@@ -1352,7 +1370,7 @@ public class Bingo {
 		textField_27 = new JTextField();
 		textField_27.setEditable(false);
 		textField_27.setColumns(10);
-		textField_27.setBounds(414, 265, 116, 203);
+		textField_27.setBounds(414, 265, 116, 61);
 		frame.getContentPane().add(textField_27);
 
 		txtPlayerA = new JTextField();
@@ -1378,6 +1396,7 @@ public class Bingo {
 		txtScore.setColumns(10);
 		txtScore.setBounds(352, 222, 116, 22);
 		frame.getContentPane().add(txtScore);
+	//	im.paintIcon(panel, g, 286, 330);
 
 		textField_28 = new JTextField();
 		textField_28.setEditable(false);
@@ -1385,4 +1404,9 @@ public class Bingo {
 		textField_28.setBounds(414, 118, 116, 22);
 		frame.getContentPane().add(textField_28);
 	}
+
+public void  paint(Graphics g) {
+	Container p=frame.getContentPane();
+	im.paintIcon(p, g, 286, 330);
+}
 }
