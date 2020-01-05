@@ -19,3 +19,6 @@ Run src/AppWindow/Login.java to start
 Login System- SQL based login system, important windows are in src/*
  Uses sql query to retrieve stored data as well as write data. 
  Utilized java sql package.
+
+
+games- collection of mini games 
