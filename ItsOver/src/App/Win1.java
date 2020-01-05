@@ -89,17 +89,17 @@ public class Win1 {
 				int start=0;
 				while(start<8) {
 					if(res_r[start]==3) {
-						JOptionPane.showMessageDialog(null, "It's over for incel_rage kys");
+						JOptionPane.showMessageDialog(null, "It's over ");
 						break;
 					}
 					if(res_h[start]==3) {
-						JOptionPane.showMessageDialog(null, "It's over for incel_hollow kys");
+						JOptionPane.showMessageDialog(null, "It's over");
 						break;
 					}
 					start++;
 				}
 				if(turn==10) {
-					JOptionPane.showMessageDialog(null, "Game Over fag kys");
+					JOptionPane.showMessageDialog(null, "Game Over ");
 				}
 				
 			}
@@ -132,17 +132,17 @@ public class Win1 {
 				int start=0;
 				while(start<8) {
 					if(res_r[start]==3) {
-						JOptionPane.showMessageDialog(null, "It's over for incel_rage kys");
+						JOptionPane.showMessageDialog(null, "It's over");
 						break;
 					}
 					if(res_h[start]==3) {
-						JOptionPane.showMessageDialog(null, "It's over for incel_hollow kys");
+						JOptionPane.showMessageDialog(null, "It's over ");
 						break;
 					}
 					start++;
 				}
 				if(turn==10) {
-					JOptionPane.showMessageDialog(null, "Game Over fag kys");
+					JOptionPane.showMessageDialog(null, "Game Over ");
 				}
 			}
 		});
@@ -176,16 +176,16 @@ public class Win1 {
 				int start=0;
 				while(start<8) {
 					if(res_r[start]==3) {
-						JOptionPane.showMessageDialog(null, "It's over for incel_rage kys");
+						JOptionPane.showMessageDialog(null, "It's over ");
 						break;
 					}
 					if(res_h[start]==3) {
-						JOptionPane.showMessageDialog(null, "It's over for incel_hollow kys");
+						JOptionPane.showMessageDialog(null, "It's over ");
 						break;
 					}
 					start++;
 				}if(turn==10) {
-					JOptionPane.showMessageDialog(null, "Game Over fag kys");
+					JOptionPane.showMessageDialog(null, "Game Over ");
 				}
 			}
 		});
@@ -219,16 +219,16 @@ public class Win1 {
 				int start=0;
 				while(start<8) {
 					if(res_r[start]==3) {
-						JOptionPane.showMessageDialog(null, "It's over for incel_rage kys");
+						JOptionPane.showMessageDialog(null, "It's over ");
 						break;
 					}
 					if(res_h[start]==3) {
-						JOptionPane.showMessageDialog(null, "It's over for incel_hollow kys");
+						JOptionPane.showMessageDialog(null, "It's over ");
 						break;
 					}
 					start++;
 				}if(turn==10) {
-					JOptionPane.showMessageDialog(null, "Game Over fag kys");
+					JOptionPane.showMessageDialog(null, "Game Over ");
 				}
 			}
 		});
@@ -262,16 +262,16 @@ public class Win1 {
 				int start=0;
 				while(start<8) {
 					if(res_r[start]==3) {
-						JOptionPane.showMessageDialog(null, "It's over for incel_rage kys");
+						JOptionPane.showMessageDialog(null, "It's over ");
 						break;
 					}
 					if(res_h[start]==3) {
-						JOptionPane.showMessageDialog(null, "It's over for incel_hollow kys");
+						JOptionPane.showMessageDialog(null, "It's over ");
 						break;
 					}
 					start++;
 				}if(turn==10) {
-					JOptionPane.showMessageDialog(null, "Game Over fag kys");
+					JOptionPane.showMessageDialog(null, "Game Over ");
 				}
 			}
 		});
@@ -305,16 +305,16 @@ public class Win1 {
 				int start=0;
 				while(start<8) {
 					if(res_r[start]==3) {
-						JOptionPane.showMessageDialog(null, "It's over for incel_rage kys");
+						JOptionPane.showMessageDialog(null, "It's over ");
 						break;
 					}
 					if(res_h[start]==3) {
-						JOptionPane.showMessageDialog(null, "It's over for incel_hollow kys");
+						JOptionPane.showMessageDialog(null, "It's over ");
 						break;
 					}
 					start++;
 				}if(turn==10) {
-					JOptionPane.showMessageDialog(null, "Game Over fag kys");
+					JOptionPane.showMessageDialog(null, "Game Over ");
 				}
 			}
 		});
@@ -348,16 +348,16 @@ public class Win1 {
 				int start=0;
 				while(start<8) {
 					if(res_r[start]==3) {
-						JOptionPane.showMessageDialog(null, "It's over for incel_rage kys");
+						JOptionPane.showMessageDialog(null, "It's over ");
 						break;
 					}
 					if(res_h[start]==3) {
-						JOptionPane.showMessageDialog(null, "It's over for incel_hollow kys");
+						JOptionPane.showMessageDialog(null, "It's over ");
 						break;
 					}
 					start++;
 				}if(turn==10) {
-					JOptionPane.showMessageDialog(null, "Game Over fag kys");
+					JOptionPane.showMessageDialog(null, "Game Over");
 				}
 			}
 		});
@@ -391,16 +391,16 @@ public class Win1 {
 				int start=0;
 				while(start<8) {
 					if(res_r[start]==3) {
-						JOptionPane.showMessageDialog(null, "It's over for incel_rage kys");
+						JOptionPane.showMessageDialog(null, "It's over ");
 						break;
 					}
 					if(res_h[start]==3) {
-						JOptionPane.showMessageDialog(null, "It's over for incel_hollow kys");
+						JOptionPane.showMessageDialog(null, "It's over");
 						break;
 					}
 					start++;
 				}if(turn==10) {
-					JOptionPane.showMessageDialog(null, "Game Over fag kys");
+					JOptionPane.showMessageDialog(null, "Game Over ");
 				}
 			}
 		});
@@ -434,16 +434,16 @@ public class Win1 {
 				int start=0;
 				while(start<8) {
 					if(res_r[start]==3) {
-						JOptionPane.showMessageDialog(null, "It's over for incel_rage kys");
+						JOptionPane.showMessageDialog(null, "It's over");
 						break;
 					}
 					if(res_h[start]==3) {
-						JOptionPane.showMessageDialog(null, "It's over for incel_hollow kys");
+						JOptionPane.showMessageDialog(null, "It's over ");
 						break;
 					}
 					start++;
 				}if(turn==10) {
-					JOptionPane.showMessageDialog(null, "Game Over fag kys");
+					JOptionPane.showMessageDialog(null, "Game Over ");
 				}
 			}
 		});
