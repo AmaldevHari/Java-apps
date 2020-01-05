@@ -14,3 +14,8 @@ Includes a login window, registration window and main window. Stores login data 
 
 
 Run src/AppWindow/Login.java to start
+
+
+Login System- SQL based login system, important windows are in src/*
+ Uses sql query to retrieve stored data as well as write data. 
+ Utilized java sql package.
