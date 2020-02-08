@@ -58,7 +58,7 @@ public class Win1 {
 		panel.setBackground(Color.BLACK);
 		Frame.getContentPane().add(panel);
 		panel.setLayout(null);
-		Frame.setTitle("Bruh it's over ");
+		Frame.setTitle("it's over ");
 		button = new JButton();
 		button.setBounds(44, 72, 139, 118);
 		panel.add(button);
